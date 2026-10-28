@@ -1,0 +1,16 @@
+name: Идея
+description: Чего не хватает на домашнем экране или в пульте
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Что хочется
+      description: Опиши сценарий: что ты делаешь и где сейчас неудобно.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Где
+      options: [Главная, Приложения, Входы, Настройки, Пульт на iPhone, Обновления, Другое]

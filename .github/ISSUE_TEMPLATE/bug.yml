@@ -1,0 +1,28 @@
+name: Что-то не работает
+description: Ошибка, сбой, тормоза или кривое отображение
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что делал, что ожидал увидеть и что увидел.
+      placeholder: Открыл «Входы», нажал OK на PS5 — экран мигнул и вернулся в Glint.
+    validations:
+      required: true
+  - type: textarea
+    id: diag
+    attributes:
+      label: Отчёт диагностики
+      description: Пульт на iPhone → «Ещё» → «Диагностика» → «Скопировать отчёт». Там версия, модель, память, плавность и последний сбой.
+      render: json
+  - type: input
+    id: tv
+    attributes:
+      label: Телевизор
+      placeholder: Xiaomi Mi TV 4S 43, Android TV 9
+  - type: textarea
+    id: media
+    attributes:
+      label: Фото или видео экрана
+      description: Перетащи сюда, если есть.
